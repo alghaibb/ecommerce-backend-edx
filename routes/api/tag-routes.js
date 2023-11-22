@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
       include: [
         {
           model: Product,
-          through: ProductTag, // Include the ProductTag model for association
+          through: ProductTag, 
         },
       ],
     });
@@ -30,7 +30,7 @@ router.get('/:id', async (req, res) => {
       include: [
         {
           model: Product,
-          through: ProductTag, // Include the ProductTag model for association
+          through: ProductTag, 
         },
       ],
     });
